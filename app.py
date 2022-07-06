@@ -33,19 +33,8 @@ _max_width_()
 c30, c31, c32 = st.columns([2.5, 1, 3])
 
 with c30:
-    col1, col2, col3 = st.beta_columns([1,6,1])
-
-    with col1:
-        st.write("")
-
-    with col2:
-        st.image("logo.png", width=400)
-
-    with col3:
-        st.write("")
-    
+    st.image("logo.png", width=400)
     st.header("")
-
     st.markdown("")
 
 st.markdown("")
