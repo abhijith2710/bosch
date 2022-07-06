@@ -2,7 +2,6 @@ import streamlit as st
 import numpy as np
 from pandas import DataFrame
 from keybert import KeyBERT
-# For Flair (Keybert)
 from flair.embeddings import TransformerDocumentEmbeddings
 import seaborn as sns
 # For download buttons
@@ -11,8 +10,7 @@ import os
 import json
 
 st.set_page_config(
-    page_title="BERT Keyword Extractor",
-    page_icon="🎈",
+    page_title="Keyword Extractor",
 )
 
 
@@ -35,8 +33,8 @@ _max_width_()
 c30, c31, c32 = st.columns([2.5, 1, 3])
 
 with c30:
-    st.image("logo.png", width=400)
     st.title("Keyword Extractor")
+    st.image("logo.png", width=400)
     st.header("")
 
     st.markdown("")
